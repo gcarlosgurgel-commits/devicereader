@@ -1,0 +1,8 @@
+#criar um arquivo para centralizar as contstantes (seria o .env??)
+    Nesse arquivo incluir
+        path do log de erros
+        mensagens padroes ao usuário:
+            Quando ocorre um erro por exemplo
+        mensagem padrao ao ADMIN
+        todos os paths passados no sistemas estãoem "hardcode" estudar como ter os paths automaticamente para o caso de trocalos de lugar em diretorios.
+        

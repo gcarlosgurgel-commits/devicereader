@@ -1,0 +1,11 @@
+23/06/2026 | 14:37:19: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'str' object has no attribute 'lowe'"
+   ],
+   "LinePathError": "<frame at 0x000002335531F940, file 'C:\\\\Users\\\\georg\\\\onedrive\\\\documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 58, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x00000233550DDC30, file \"C:\\Users\\georg\\onedrive\\documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 53>",
+   "ErrorFileName": "C:\\Users\\georg\\onedrive\\documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 56
+}
