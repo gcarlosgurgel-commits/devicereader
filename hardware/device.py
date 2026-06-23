@@ -53,7 +53,7 @@ class Device:
     def create_properties(self):
         try:
             for key in (data := self.get_general_information()):
-                setattr(self, key.lowe(), data[key])
+                setattr(self, key.lower(), data[key])
         except Exception as e:
             error_treatment.error.error_log_message(e)
 

@@ -9,3 +9,36 @@
    "ErrorScopeName": "create_properties",
    "ErrorLineNo": 56
 }
+23/06/2026 | 23:14:46: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'str' object has no attribute 'lowe'"
+   ],
+   "LinePathError": "<frame at 0x0000020572517C40, file 'C:\\\\Users\\\\georg\\\\onedrive\\\\documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 58, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x0000020571E4DC30, file \"C:\\Users\\georg\\onedrive\\documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 53>",
+   "ErrorFileName": "C:\\Users\\georg\\onedrive\\documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 56
+}
+23/06/2026 | 23:21:34: {
+   "TypeError": "Exception",
+   "ArgumentsListErro": [
+      "Erro teste"
+   ],
+   "LinePathError": "<frame at 0x0000023AD68D02E0, file 'C:\\\\Users\\\\georg\\\\onedrive\\\\documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\cpu.py', line 54, code get_cpu_frequency>",
+   "StartScopeError": "<code object get_cpu_frequency at 0x0000023AD6868EA0, file \"C:\\Users\\georg\\onedrive\\documentos\\WInLinux\\automacoes\\hardware\\cpu.py\", line 45>",
+   "ErrorFileName": "C:\\Users\\georg\\onedrive\\documentos\\WInLinux\\automacoes\\hardware\\cpu.py",
+   "ErrorScopeName": "get_cpu_frequency",
+   "ErrorLineNo": 51
+}
+23/06/2026 | 23:23:52: {
+   "TypeError": "Exception",
+   "ArgumentsListErro": [
+      "teste"
+   ],
+   "LinePathError": "<frame at 0x00000156662C02E0, file 'C:\\\\Users\\\\georg\\\\onedrive\\\\documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\cpu.py', line 54, code get_cpu_frequency>",
+   "StartScopeError": "<code object get_cpu_frequency at 0x0000015666258EA0, file \"C:\\Users\\georg\\onedrive\\documentos\\WInLinux\\automacoes\\hardware\\cpu.py\", line 45>",
+   "ErrorFileName": "C:\\Users\\georg\\onedrive\\documentos\\WInLinux\\automacoes\\hardware\\cpu.py",
+   "ErrorScopeName": "get_cpu_frequency",
+   "ErrorLineNo": 51
+}
