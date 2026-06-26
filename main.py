@@ -5,13 +5,11 @@ from user.user import User
 from hardware.cpu import CPU
 from hardware.memory import Memory
 
+from models import UserRequest
+
 
 app = FastAPI()
 
-class UserRequest(BaseModel):
-    first_name: str
-    last_name: str
-    user_mail: str
 
 @app.get("/")
 def root():
