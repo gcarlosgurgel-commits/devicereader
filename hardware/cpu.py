@@ -42,13 +42,25 @@ class CPU:
         except Exception as e:
             error.error_log_message(e)
     
-    def get_cpu_frequency(self):
+    def get_cpu_frequency(self) -> dict:
         """
-        Returns decpu frequency
+        Returns CPU frequencies.
+
+        Returns a dict that contains:
+         - Current: A frequência atual do processador em MHz
+         - Min: É a frequência mínima absoluta em MHZ que o processador consegue atingir sob o controle do sistema operacional.
+         - Max: É a frequência em MHz máxima nominal (ou de fábrica) que o processador pode atingir em condições normais de uso.
+
+
         """
 
         try:
-            return psutil.cpu_freq(percpu=False)
+            data = psutil.cpu_freq(percpu=False)
+            return {
+                "current": data.current,
+                "min": data.min,
+                "max": data.max
+            }
         except Exception as e:
             error.error_log_message(e)
             return "Não foi possível exibir essa informação"
