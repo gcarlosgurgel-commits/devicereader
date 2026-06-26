@@ -1,3 +1,2 @@
-﻿psutil
-fastapi
-uvicorn
+psutil
+fastapi uvicorn
