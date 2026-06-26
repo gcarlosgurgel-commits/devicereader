@@ -1,2 +1,3 @@
-psutil
+﻿psutil
 fastapi uvicorn
+pydatinc[email]
