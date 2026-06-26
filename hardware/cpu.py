@@ -51,7 +51,6 @@ class CPU:
          - Min: É a frequência mínima absoluta em MHZ que o processador consegue atingir sob o controle do sistema operacional.
          - Max: É a frequência em MHz máxima nominal (ou de fábrica) que o processador pode atingir em condições normais de uso.
 
-
         """
 
         try:

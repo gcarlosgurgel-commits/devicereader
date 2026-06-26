@@ -23,9 +23,25 @@ class Memory:
 
     def get_memory_information(self) -> int:
         """
-        Returns the number of physical CPUs
+        Returns the memory informations expressed in bytes.
+        
+        - total: total physical memory available;
+        - available: the memory that can be given instantly to processes without the system going into swap;
+        - percent: the percentage usage calculated as (total - available) / total * 100;
+        - used: the percentage usage calculated as (total - available) / total * 100;
+        - free: memory not being used at all (zeroed) that is readily available;
+                note that this doesn't reflect the actual memory available
+                (use 'available' instead)
+
         """
         try:
-            return psutil.virtual_memory()
+            data = psutil.virtual_memory()
+            return {
+                "total": data.total,
+                "available": data.available,
+                "percent": data.percent,
+                "used": data.used,
+                "free": data.free
+            }
         except Exception as e:
             error.error_log_message(e)
