@@ -10,3 +10,5 @@ class UserRequest(BaseModel):
 class DeviceRequest(BaseModel):
     name: str
     user_id: int
+
+clas
