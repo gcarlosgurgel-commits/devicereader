@@ -9,7 +9,7 @@ from user.user import User
 from hardware.cpu import CPU
 from hardware.memory import Memory
 
-from models import UserRequest
+from models import UserRequest, DeviceRequest
 
 
 app = FastAPI()
@@ -54,4 +54,28 @@ def get_hardware_info():
     return{
         "cpu": cpu.get_general_information(),
         "memory": ram.get_general_information()
+    }
+
+
+@app.post("/devices")
+def create_device(data: DeviceRequest, db: Session = Depends(get_db)):
+    user = db.query(models.User).filter(models.User.id == data.user_id).first()
+
+    if not user:
+        from fastapi import HTTPException
+        raise HTTPException(status_code=404, detail="Usuário não encontrado")
+    
+    device = models.Device ( 
+        name = data.name,
+        user_id= data.user_id 
+        )
+
+    db.add(device)
+    db.commit()
+    db.refresh(device)
+    return{
+        "id":device.id,
+        "name": device.name,
+        "user_id": device.user_id,
+        "created_at": device.created_at
     }
