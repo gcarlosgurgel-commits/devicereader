@@ -13,19 +13,19 @@ error_file_path = Path(__file__).resolve().parent / "errors.log" #Dyanmic path t
 
 __all__ = ["error_log_message"]
 
-def __error_date_format():
+def __error_date_format() -> tuple:
     """
     Create a pattern for the date logged into erros.log file;
     Returns a tuple with date and a timestamp.
     """
 
-    today = date.today().strftime(r"%d/%m/%Y")
-    hour = datetime.now().strftime(r"%H:%M:%S")
+    today: str = date.today().strftime(r"%d/%m/%Y")
+    hour: str = datetime.now().strftime(r"%H:%M:%S")
 
     return today, hour
 
 
-def __pattern_message(date_time, error_message):
+def __pattern_message(date_time, error_message) -> str:
     """
     Create the pattern message of errors log;
 
@@ -37,7 +37,7 @@ def __pattern_message(date_time, error_message):
     
     """
 
-    error_struct = {
+    error_struct: dict = {
         "TypeError": str(type(error_message).__name__),
         "ArgumentsListErro": list(error_message.args),
         "LinePathError": str(error_message.__traceback__.tb_frame),
@@ -49,7 +49,7 @@ def __pattern_message(date_time, error_message):
     return f"{date_time[0]} | {date_time[1]}: {json.dumps(error_struct, indent=3)}"
 
 
-def __base_error_log_message(func_message, date_time, error_message):
+def __base_error_log_message(func_message, date_time, error_message) -> None:
     """
     Function: Main function. Calls the other functions _error_date_format() and _pattern_message() to write in error.log file.";
     Parameters:
