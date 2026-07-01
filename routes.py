@@ -1,13 +1,28 @@
 from fastapi import FastAPI, Depends
+from sqlalchemy.orm import Session
 
 from user.user import User
 from models import UserRequest, ConsultarUser
+
+from database import models
+from database.database import engine, SessionLocal
+
 from hardware.cpu import CPU
 from hardware.memory import Memory
 from hardware.device import Device
 
 
 app = FastAPI()
+
+
+models.Base.metadata.create_all(bind=engine)
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 #GET Routes
 
@@ -70,23 +85,25 @@ def deviceScan():
 #POST Routes **Falta persistir tudo em banco de dados**
 
 @app.post("/users/create")
-def create_user(data: UserRequest):
+def create_user(data: UserRequest, db: Session = Depends(get_db)):
     """
     Receive data
     Check data
     persist data in Db
     """
 
-    user = User(data.first_name, data.last_name, data.age, data.mail)
+    usuario = models.User(first_name= data.first_name, last_name = data.last_name, user_age = data.age, user_mail = data.mail)
 
-    #[FALTA]: Falta persistir em banco de dados#
+    db.add(usuario)
+    db.commit()
+    db.refresh(usuario)
 
     return {
         "Message": "Usuário criado com sucesso",
-        "first_name": user.first_name,
-        "last_name": user.last_name,
-        "user_age": user.user_age,
-        "user_mail": user.user_mail
+        "first_name": usuario.first_name,
+        "last_name": usuario.last_name,
+        "user_age": usuario.user_age,
+        "user_mail": usuario.user_mail
     }
 
 @app.post("/users/consultar")
