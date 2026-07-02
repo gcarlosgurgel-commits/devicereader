@@ -1,7 +1,9 @@
 import subprocess
-import error_treatment.error
+import machineid
 import json
-import traceback
+
+import error_treatment.error
+
 
 class Device:
     """
@@ -24,9 +26,6 @@ class Device:
                 - Name
                 - UserName
                 - PrimaryOwnerName
-                - TotalPhysicalMemory
-                - NumberOfProcessors
-                - NumberOfLogicalProcessors
         """
         try:
             result = subprocess.run(
@@ -36,7 +35,7 @@ class Device:
                     "-Command",
                     "Get-CimInstance",
                     "-ClassName Win32_ComputerSystem",
-                    "| Select-Object Model, Name, UserName, PrimaryOwnerName, TotalPhysicalMemory, NumberOfProcessors, NumberOfLogicalProcessors",
+                    "| Select-Object Model, Name, UserName, PrimaryOwnerName",
                     "| ConvertTo-Json"
                 ],
                 capture_output=True,
@@ -44,7 +43,10 @@ class Device:
                 encoding="cp850"
             )
 
+            machine_id = machineid.id()
+
             data = json.loads(result.stdout)
+            data["MachineId"]=machine_id
             return data
         
         except Exception as e:

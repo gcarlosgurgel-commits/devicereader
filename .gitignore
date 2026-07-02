@@ -1,3 +1,6 @@
 venv/
 __pycache__/
 *.pyc
+endpoints_mindmap.drawio
+.$endpoints_mindmap.drawio.dtmp
+.$endpoints_mindmap.drawio.bkp

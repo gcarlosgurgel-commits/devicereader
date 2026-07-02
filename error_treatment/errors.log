@@ -42,3 +42,399 @@
    "ErrorScopeName": "get_cpu_frequency",
    "ErrorLineNo": 51
 }
+01/07/2026 | 16:37:43: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'CompletedProcess' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x000001D63185B9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000001D6312E7830, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 16:37:43: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x000001D631827140, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 60, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x000001D631153130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 57
+}
+01/07/2026 | 16:37:43: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'CompletedProcess' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x000001D63185B9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000001D6312E7830, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 16:40:01: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x00000217E7AB3AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 52, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x00000217E6017CE0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 16:40:01: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x00000217E7A87140, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 59, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x00000217E7383130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 54>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 56
+}
+01/07/2026 | 16:40:01: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x00000217E7AB3AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 52, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x00000217E6017CE0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:05:11: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'data' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x0000025206FA7AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 52, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000025206A27630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:05:11: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x0000025206F77240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 59, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x0000025206893130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 54>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 56
+}
+01/07/2026 | 17:05:11: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'data' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x0000025206FA7AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 52, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000025206A27630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:06:33: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'data' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x0000025537BCB9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 52, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000025537637630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:06:33: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x0000025537B97240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 59, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x00000255374A3130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 54>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 56
+}
+01/07/2026 | 17:06:33: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'data' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x0000025537BCB9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 52, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000025537637630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:09:42: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'data' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x0000010F988AB9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 52, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000010F98327630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:09:42: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x0000010F98877240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 59, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x0000010F98193130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 54>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 56
+}
+01/07/2026 | 17:09:42: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'data' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x0000010F988AB9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 52, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000010F98327630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:11:04: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'data' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x000001BFF9C73AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000001BFF689A310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:11:04: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x000001BFF9C47240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 60, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x000001BFF9573130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 57
+}
+01/07/2026 | 17:11:04: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'data' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x000001BFF9C73AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000001BFF689A310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 47
+}
+01/07/2026 | 17:17:29: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'CompletedProcess' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x0000021BCA227AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000021BC9CA7630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:17:29: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x0000021BCA1F7240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 60, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x0000021BC9B13130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 57
+}
+01/07/2026 | 17:17:29: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'CompletedProcess' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x0000021BCA227AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000021BC9CA7630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:18:12: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'CompletedProcess' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x000001F45347B9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000001F452EE7630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:18:12: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x000001F453447240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 60, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x000001F452D53130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 57
+}
+01/07/2026 | 17:18:12: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'CompletedProcess' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x000001F45347B9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000001F452EE7630, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:19:01: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x00000206259D3AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000020622B834A0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:19:01: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x00000206259A7240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 60, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x00000206252D3130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 57
+}
+01/07/2026 | 17:19:01: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x00000206259D3AB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000020622B834A0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:19:44: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x000002510F93B9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000002510CDCFA10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:19:44: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x000002510F907240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 60, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x000002510F213130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 57
+}
+01/07/2026 | 17:19:44: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x000002510F93B9A0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 53, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000002510CDCFA10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:20:09: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x00000163A2553CD0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 54, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000001639F344520, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:20:09: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x00000163A2527340, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 61, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x00000163A1E23130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 56>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 58
+}
+01/07/2026 | 17:20:09: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x00000163A2553CD0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 54, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x000001639F344520, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:20:35: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x0000022EED9EBAB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 54, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000022EEC080B50, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}
+01/07/2026 | 17:20:35: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'NoneType' object is not iterable"
+   ],
+   "LinePathError": "<frame at 0x0000022EED9B7340, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 61, code create_properties>",
+   "StartScopeError": "<code object create_properties at 0x0000022EED2E3130, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 56>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "create_properties",
+   "ErrorLineNo": 58
+}
+01/07/2026 | 17:20:35: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'str' object does not support item assignment"
+   ],
+   "LinePathError": "<frame at 0x0000022EED9EBAB0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\hardware\\\\device.py', line 54, code get_general_information>",
+   "StartScopeError": "<code object get_general_information at 0x0000022EEC080B50, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py\", line 19>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\hardware\\device.py",
+   "ErrorScopeName": "get_general_information",
+   "ErrorLineNo": 48
+}

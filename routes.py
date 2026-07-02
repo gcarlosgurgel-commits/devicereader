@@ -69,17 +69,30 @@ def deviceRoot():
     }
 
 @app.get("/devices/scan")
-def deviceScan():
+def deviceScan(db: Session = Depends(get_db)):
     """
     Scan the current device
     """
 
+    deviceRequest = Device().get_general_information()
+    deviceModel = models.Device(
+        model = deviceRequest["Model"], 
+        name = deviceRequest["Name"], 
+        username = deviceRequest["UserName"], 
+        primaryOwnerName = deviceRequest["PrimaryOwnerName"],
+        machine_id = deviceRequest["MachineId"]
+        )
+    
+    db.add(deviceModel)
+    db.commit()
+    db.refresh(deviceModel)
+
+
     return {
         "Mensagem": "Dispositivo escaneado com sucesso.",
-        "Device": Device().get_general_information(),
-        "cpu": CPU().get_general_information(),
-        "memory": Memory().get_general_information()
-
+        "Device": deviceRequest,
+        # "cpu": CPU().get_general_information(),
+        # "memory": Memory().get_general_information()
     }
 
 #POST Routes **Falta persistir tudo em banco de dados**
