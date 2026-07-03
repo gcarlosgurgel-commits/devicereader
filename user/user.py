@@ -1,6 +1,6 @@
 from error_treatment import error
 
-class User:
+class UserClass:
     def __init__(self, first_name, last_name, user_age, user_mail):
         self.first_name = first_name
         self.last_name = last_name
