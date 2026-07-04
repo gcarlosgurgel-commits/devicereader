@@ -10,13 +10,15 @@ KEY = "CHAVESECRETA"
 ALG = "HS256"
 
 
-def _base_create_token(KEY: str, alg: str, role: str) -> dict:
+def _base_create_token(KEY: str, alg: str, role: str, user_mail: str, user_id: int) -> dict:
     """
     Create a new token
     """
     try:
         pay ={
         "role": role,
+        "user_mail": user_mail,
+        "user_id": user_id,
         "exp": datetime.now(timezone.utc) + timedelta(minutes=15)
         }
 

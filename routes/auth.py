@@ -4,16 +4,18 @@ from sqlalchemy.orm import Session
 from database.database import get_db
 from database.models import User_db
 
-from models import UserRequest
+from models import UserGenerate, UserLogin
 
 from auth import jwt_handler
 from core import security
+
+from error_treatment.error import error_log_message
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
 
 @router.post("/register")
-def auth_register(data: UserRequest, db: Session = Depends(get_db)):  
+def auth_register(data: UserGenerate, db: Session = Depends(get_db)):  
 
     user = User_db(
         first_name= data.first_name, 
@@ -24,6 +26,7 @@ def auth_register(data: UserRequest, db: Session = Depends(get_db)):
         )
 
     if (existing_user := db.query(User_db).filter(User_db.user_mail == data.mail).first()):
+        #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
         return{
             "MensagemErro": "Usuário(a) já regitadoA(a)"
         }
@@ -44,3 +47,34 @@ def auth_register(data: UserRequest, db: Session = Depends(get_db)):
             "access_token": token
         }
     }
+
+
+@router.post("/login")
+def auth_login(data: UserLogin, db: Session = Depends(get_db)):
+
+    try:
+        if not (user_exists := db.query(User_db).filter(User_db.user_mail == data.email).first()):
+            #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
+            return {
+                "mensagem": "usuário não encontrado. Verifique seu e-mail"
+            }
+        
+        if not security.verify_password(data.password, user_exists.password):
+            #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
+            return{
+                "mensagem": "Login inválido"
+            }
+        
+        #Cria o otken do usuário
+        token = jwt_handler.create_token("user", data.email, user_exists.id)
+        
+        return{
+            "mensagem": "bem vindo usuario",
+            "token": token
+        }
+        
+    except Exception as e:
+        error_log_message(e)
+        return {
+            "messagem": "erro ao tentar efetuar login do usuário"
+        }

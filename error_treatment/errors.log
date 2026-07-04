@@ -438,3 +438,25 @@
    "ErrorScopeName": "get_general_information",
    "ErrorLineNo": 48
 }
+04/07/2026 | 04:46:25: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "verify_password() takes 1 positional argument but 2 were given"
+   ],
+   "LinePathError": "<frame at 0x000002A01CC8DB70, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\auth.py', line 70, code auth_login>",
+   "StartScopeError": "<code object auth_login at 0x000002A019ED3080, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\auth.py\", line 51>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\auth.py",
+   "ErrorScopeName": "auth_login",
+   "ErrorLineNo": 60
+}
+04/07/2026 | 04:46:25: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "verify_password() takes 1 positional argument but 2 were given"
+   ],
+   "LinePathError": "<frame at 0x000002A01CC8DB70, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\auth.py', line 70, code auth_login>",
+   "StartScopeError": "<code object auth_login at 0x000002A019ED3080, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\auth.py\", line 51>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\auth.py",
+   "ErrorScopeName": "auth_login",
+   "ErrorLineNo": 60
+}

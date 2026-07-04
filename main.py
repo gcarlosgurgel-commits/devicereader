@@ -4,8 +4,10 @@ from database.database import engine
 import uvicorn
 
 from routes import auth
+from routes import root
 
 app = FastAPI()
+app.include_router(root.router)
 app.include_router(auth.router)
 
 Base.metadata.create_all(bind=engine)

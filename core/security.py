@@ -14,3 +14,17 @@ def password_hasher(password:str) -> str:
     except Exception as e:
         error_log_message(e)
         return {"[ERROR]": "Erro no hash do password."}
+    
+
+def verify_password(password, hashed_password):
+    """
+    Faz o check do password
+    """
+    try:
+        password_hash = PasswordHash.recommended()
+        is_valid = password_hash.verify(password, hashed_password)
+        return is_valid
+    except Exception as e:
+        error_log_message(e)
+        return {"[ERROR]": "Erro no hash do password."}
+    
