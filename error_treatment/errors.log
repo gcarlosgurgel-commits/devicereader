@@ -460,3 +460,223 @@
    "ErrorScopeName": "auth_login",
    "ErrorLineNo": 60
 }
+04/07/2026 | 05:36:13: {
+   "TypeError": "UnboundLocalError",
+   "ArgumentsListErro": [
+      "cannot access local variable 'device_instance' where it is not associated with a value"
+   ],
+   "LinePathError": "<frame at 0x000002590698C040, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 31, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x00000259066F8C30, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 13>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 25
+}
+04/07/2026 | 05:37:36: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'dict' object has no attribute 'Model'"
+   ],
+   "LinePathError": "<frame at 0x000001D2436E7450, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 31, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x000001D24350A030, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 13>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 25
+}
+04/07/2026 | 05:38:23: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'dict' object has no attribute 'Model'"
+   ],
+   "LinePathError": "<frame at 0x000001D333067450, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 32, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x000001D331635FE0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 13>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 26
+}
+04/07/2026 | 05:38:41: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'dict' object has no attribute 'Name'"
+   ],
+   "LinePathError": "<frame at 0x0000029A29E57DE0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 32, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x0000029A26F57AF0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 13>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 26
+}
+04/07/2026 | 05:39:29: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "__init__() takes 1 positional argument but 6 were given"
+   ],
+   "LinePathError": "<frame at 0x00000241675AE9E0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 32, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x00000241673C5390, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 13>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 26
+}
+04/07/2026 | 05:41:39: {
+   "TypeError": "InvalidRequestError",
+   "ArgumentsListErro": [
+      "When initializing mapper Mapper[User_db(users)], expression 'Device' failed to locate a name ('Device'). If this is a class name, consider adding this relationship() to the <class 'database.models.User_db'> class after both dependent classes have been defined."
+   ],
+   "LinePathError": "<frame at 0x000002426FE7EB00, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 32, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x000002426FC95390, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 13>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 26
+}
+04/07/2026 | 05:46:50: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) UNIQUE constraint failed: devices.machine_id"
+   ],
+   "LinePathError": "<frame at 0x0000012FC340D6C0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 42, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x0000012FC19E0E90, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 13>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 35
+}
+04/07/2026 | 05:46:50: {
+   "TypeError": "OperationalError",
+   "ArgumentsListErro": [
+      "(sqlite3.OperationalError) database is locked"
+   ],
+   "LinePathError": "<frame at 0x0000012FC340DA20, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 42, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x0000012FC19E0E90, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 13>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 35
+}
+04/07/2026 | 06:21:10: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'User_db' object has no attribute 'password'"
+   ],
+   "LinePathError": "<frame at 0x00000288EBC3E240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\auth.py', line 84, code auth_login>",
+   "StartScopeError": "<code object auth_login at 0x00000288E8DAF830, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\auth.py\", line 59>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\auth.py",
+   "ErrorScopeName": "auth_login",
+   "ErrorLineNo": 69
+}
+04/07/2026 | 06:23:53: {
+   "TypeError": "DecodeError",
+   "ArgumentsListErro": [
+      "Invalid token type. Token must be a <class 'bytes'>"
+   ],
+   "LinePathError": "<frame at 0x00000280EFD7E440, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000280EF683310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+04/07/2026 | 06:23:53: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) NOT NULL constraint failed: devices.user_id"
+   ],
+   "LinePathError": "<frame at 0x00000280EFD26B00, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 51, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x00000280EE0B5D90, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 16>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 44
+}
+04/07/2026 | 06:23:53: {
+   "TypeError": "DecodeError",
+   "ArgumentsListErro": [
+      "Invalid token type. Token must be a <class 'bytes'>"
+   ],
+   "LinePathError": "<frame at 0x00000280EFD7E240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000280EF683310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+04/07/2026 | 06:23:53: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) NOT NULL constraint failed: devices.user_id"
+   ],
+   "LinePathError": "<frame at 0x00000280EFD276E0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 51, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x00000280EE0B5D90, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 16>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 44
+}
+04/07/2026 | 06:23:53: {
+   "TypeError": "DecodeError",
+   "ArgumentsListErro": [
+      "Invalid token type. Token must be a <class 'bytes'>"
+   ],
+   "LinePathError": "<frame at 0x00000280EFD7F040, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000280EF683310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+04/07/2026 | 06:23:53: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) NOT NULL constraint failed: devices.user_id"
+   ],
+   "LinePathError": "<frame at 0x00000280EFD27CD0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 51, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x00000280EE0B5D90, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 16>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 44
+}
+04/07/2026 | 06:29:39: {
+   "TypeError": "DecodeError",
+   "ArgumentsListErro": [
+      "Invalid token type. Token must be a <class 'bytes'>"
+   ],
+   "LinePathError": "<frame at 0x000001786BDD9240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x000001786B773310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+04/07/2026 | 06:29:39: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) NOT NULL constraint failed: devices.user_id"
+   ],
+   "LinePathError": "<frame at 0x000001786BE11DF0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 51, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x000001786A34A730, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 16>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 44
+}
+04/07/2026 | 06:36:16: {
+   "TypeError": "NameError",
+   "ArgumentsListErro": [
+      "name 'user_id' is not defined"
+   ],
+   "LinePathError": "<frame at 0x000001AC2D911F20, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 49, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x000001AC2BEBCC70, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 17>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 38
+}
+04/07/2026 | 06:37:36: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) UNIQUE constraint failed: devices.machine_id"
+   ],
+   "LinePathError": "<frame at 0x00000281146D1F20, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 49, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x0000028112B95680, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 17>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 42
+}
+04/07/2026 | 06:37:36: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) UNIQUE constraint failed: devices.machine_id"
+   ],
+   "LinePathError": "<frame at 0x00000281146D3480, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 49, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x0000028112B95680, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 17>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 42
+}

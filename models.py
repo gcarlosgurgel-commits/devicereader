@@ -50,3 +50,6 @@ class UserLogin(BaseModel):
             raise ValueError("Password deve ter pelo menos um caractere especial")
         return value
     
+
+class DeviceGenerate(BaseModel):
+    device_name : str

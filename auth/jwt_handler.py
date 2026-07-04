@@ -19,7 +19,7 @@ def _base_create_token(KEY: str, alg: str, role: str, user_mail: str, user_id: i
         "role": role,
         "user_mail": user_mail,
         "user_id": user_id,
-        "exp": datetime.now(timezone.utc) + timedelta(minutes=15)
+        "exp": datetime.now(timezone.utc) + timedelta(minutes=120)
         }
 
         return {"token": (token := jwt.encode(

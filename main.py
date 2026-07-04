@@ -3,12 +3,13 @@ from database.models import Base
 from database.database import engine
 import uvicorn
 
-from routes import auth
-from routes import root
+from routes import auth, root, devices
+
 
 app = FastAPI()
 app.include_router(root.router)
 app.include_router(auth.router)
+app.include_router(devices.router)
 
 Base.metadata.create_all(bind=engine)
 

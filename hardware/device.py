@@ -26,6 +26,7 @@ class Device:
                 - Name
                 - UserName
                 - PrimaryOwnerName
+                - MachineId
         """
         try:
             result = subprocess.run(

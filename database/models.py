@@ -1,5 +1,4 @@
 from sqlalchemy import Integer, String, ForeignKey, DateTime
-from typing import Optional
 from sqlalchemy.orm import relationship, Mapped, mapped_column, DeclarativeBase
 from sqlalchemy.sql import func
 
@@ -27,7 +26,7 @@ class User_db(Base):
     last_name: Mapped[str] = mapped_column(String)
     user_age: Mapped[int] = mapped_column(Integer)
     user_mail: Mapped[str] = mapped_column(String, unique=True)
-    password: Mapped[str] = mapped_column(String)
+    password_hash: Mapped[str] = mapped_column(String)
     created_at: Mapped[DateTime] = mapped_column(
         DateTime, 
         server_default=func.now()
@@ -39,12 +38,12 @@ class User_db(Base):
         )
 
     devices = relationship(
-        "Device", 
+        "DeviceTable", 
         back_populates="user"
         )
 
 
-class Device(Base):
+class DeviceTable(Base):
     """
     -> PARAMETERS <-
     model,
@@ -60,11 +59,11 @@ class Device(Base):
     username: Mapped[str] = mapped_column(String)
     primaryOwnerName: Mapped[str] = mapped_column(String)
     machine_id = mapped_column(String ,primary_key=True)
-    user_id: Mapped[Optional[int]] = mapped_column(
+    user_id: Mapped[int] = mapped_column(
         ForeignKey("users.id"),
-        nullable=True
+        nullable=False
     )
-    user: Mapped[Optional["User_db"]] = relationship(
+    user: Mapped["User_db"] = relationship(
         back_populates="devices"
     )
     created_at: Mapped[DateTime] = mapped_column(DateTime, server_default=func.now())

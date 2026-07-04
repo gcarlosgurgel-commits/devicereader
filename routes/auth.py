@@ -1,4 +1,6 @@
 from fastapi import APIRouter, Depends
+from fastapi.security import OAuth2PasswordBearer
+
 from sqlalchemy.orm import Session
 
 from database.database import get_db
@@ -12,6 +14,10 @@ from core import security
 from error_treatment.error import error_log_message
 
 router = APIRouter(prefix="/auth", tags=["auth"])
+
+oauth2_scheme = OAuth2PasswordBearer(
+    tokenUrl="login"
+)
 
 
 @router.post("/register")
@@ -36,7 +42,8 @@ def auth_register(data: UserGenerate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(user)
 
-    token = jwt_handler.create_token("user") 
+    existing_user = db.query(User_db).filter(User_db.user_mail == data.mail).first()
+    token = jwt_handler.create_token("user", data.mail, existing_user.id) 
 
     return{
         "Mensagem":"Usuário registado com sucesso.",
@@ -59,7 +66,7 @@ def auth_login(data: UserLogin, db: Session = Depends(get_db)):
                 "mensagem": "usuário não encontrado. Verifique seu e-mail"
             }
         
-        if not security.verify_password(data.password, user_exists.password):
+        if not security.verify_password(data.password, user_exists.password_hash):
             #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
             return{
                 "mensagem": "Login inválido"
