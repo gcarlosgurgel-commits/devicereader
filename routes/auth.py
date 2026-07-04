@@ -7,7 +7,7 @@ from database.models import User_db
 from models import UserRequest
 
 from auth import jwt_handler
-from core import seucrity
+from core import security
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -20,7 +20,7 @@ def auth_register(data: UserRequest, db: Session = Depends(get_db)):
         last_name= data.last_name, 
         user_age= data.age, 
         user_mail = data.mail,
-        password_hash = seucrity.password_hasher(data.password)
+        password_hash = security.password_hasher(data.password)
         )
 
     if (existing_user := db.query(User_db).filter(User_db.user_mail == data.mail).first()):
