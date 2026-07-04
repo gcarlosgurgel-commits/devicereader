@@ -6,11 +6,13 @@ from database.models import User_db
 
 from models import UserRequest
 
+from auth import jwt_handler
+
 router = APIRouter(prefix="/auth", tags=["auth"])
 
 
 @router.post("/register")
-def auth_register(data: UserRequest, db: Session = Depends(get_db)):
+def auth_register(data: UserRequest, db: Session = Depends(get_db)):  
 
     user = User_db(
         first_name= data.first_name, 
@@ -25,14 +27,18 @@ def auth_register(data: UserRequest, db: Session = Depends(get_db)):
             "MensagemErro": "Usuário(a) já regitadoA(a)"
         }
     
-    
     db.add(user)
     db.commit()
     db.refresh(user)
+
+    token = jwt_handler.create_token("user") 
 
     return{
         "Mensagem":"Usuário registado com sucesso.",
         "Nome": f"{user.first_name.capitalize()} {user.last_name.capitalize()}",
         "Age": user.user_age,
-        "E-mail": user.user_mail
+        "E-mail": user.user_mail,
+        "token": {
+            "access_token": token
+        }
     }
