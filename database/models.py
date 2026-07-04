@@ -18,7 +18,7 @@ class User_db(Base):
     last_name:,
     user_age:,
     user_mail:,
-    password
+    password_hash
     """
     __tablename__ = "users"
 
@@ -27,7 +27,7 @@ class User_db(Base):
     last_name: Mapped[str] = mapped_column(String)
     user_age: Mapped[int] = mapped_column(Integer)
     user_mail: Mapped[str] = mapped_column(String, unique=True)
-    password: Mapped[str] = mapped_column(String)
+    password_hash: Mapped[str] = mapped_column(String)
     created_at: Mapped[DateTime] = mapped_column(
         DateTime, 
         server_default=func.now()

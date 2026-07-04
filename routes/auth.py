@@ -7,6 +7,7 @@ from database.models import User_db
 from models import UserRequest
 
 from auth import jwt_handler
+from core import seucrity
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -19,13 +20,14 @@ def auth_register(data: UserRequest, db: Session = Depends(get_db)):
         last_name= data.last_name, 
         user_age= data.age, 
         user_mail = data.mail,
-        password = data.password #encriptar a senha com bcrypt
+        password_hash = seucrity.password_hasher(data.password)
         )
-    
+
     if (existing_user := db.query(User_db).filter(User_db.user_mail == data.mail).first()):
         return{
             "MensagemErro": "Usuário(a) já regitadoA(a)"
         }
+
     
     db.add(user)
     db.commit()
