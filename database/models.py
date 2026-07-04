@@ -10,7 +10,7 @@ class Base(DeclarativeBase):
     """
     pass
 
-class User_db(Base):
+class UserModel(Base):
     """
     PARAMETERS:
     fist_name:,
@@ -38,12 +38,12 @@ class User_db(Base):
         )
 
     devices = relationship(
-        "DeviceTable", 
+        "DeviceModel", 
         back_populates="user"
         )
 
 
-class DeviceTable(Base):
+class DeviceModel(Base):
     """
     -> PARAMETERS <-
     model,
@@ -63,7 +63,7 @@ class DeviceTable(Base):
         ForeignKey("users.id"),
         nullable=False
     )
-    user: Mapped["User_db"] = relationship(
+    user: Mapped["UserModel"] = relationship(
         back_populates="devices"
     )
     created_at: Mapped[DateTime] = mapped_column(DateTime, server_default=func.now())

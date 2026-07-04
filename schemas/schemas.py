@@ -3,7 +3,7 @@ from pydantic import BaseModel, EmailStr, field_validator
 
 
 
-class UserGenerate(BaseModel):
+class UserGenerateSchema(BaseModel):
     """
     Defines the properties of users and their data type.
     **
@@ -33,7 +33,7 @@ class UserGenerate(BaseModel):
         return value
     
 
-class UserLogin(BaseModel):
+class UserLoginSchema(BaseModel):
     email: EmailStr
     password: str
 
@@ -51,5 +51,5 @@ class UserLogin(BaseModel):
         return value
     
 
-class DeviceGenerate(BaseModel):
+class DeviceGenerateSchema(BaseModel):
     device_name : str

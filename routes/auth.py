@@ -4,9 +4,9 @@ from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 
 from database.database import get_db
-from database.models import User_db
+from database.models import UserModel
 
-from models import UserGenerate, UserLogin
+from schemas.schemas import UserGenerateSchema, UserLoginSchema
 
 from auth import jwt_handler
 from core import security
@@ -21,9 +21,9 @@ oauth2_scheme = OAuth2PasswordBearer(
 
 
 @router.post("/register")
-def auth_register(data: UserGenerate, db: Session = Depends(get_db)):  
+def auth_register(data: UserGenerateSchema, db: Session = Depends(get_db)):  
 
-    user = User_db(
+    user = UserModel(
         first_name= data.first_name, 
         last_name= data.last_name, 
         user_age= data.age, 
@@ -31,7 +31,7 @@ def auth_register(data: UserGenerate, db: Session = Depends(get_db)):
         password_hash = security.password_hasher(data.password)
         )
 
-    if (existing_user := db.query(User_db).filter(User_db.user_mail == data.mail).first()):
+    if (existing_user := db.query(UserModel).filter(UserModel.user_mail == data.mail).first()):
         #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
         return{
             "MensagemErro": "Usuário(a) já regitadoA(a)"
@@ -42,7 +42,7 @@ def auth_register(data: UserGenerate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(user)
 
-    existing_user = db.query(User_db).filter(User_db.user_mail == data.mail).first()
+    existing_user = db.query(UserModel).filter(UserModel.user_mail == data.mail).first()
     token = jwt_handler.create_token("user", data.mail, existing_user.id) 
 
     return{
@@ -57,10 +57,10 @@ def auth_register(data: UserGenerate, db: Session = Depends(get_db)):
 
 
 @router.post("/login")
-def auth_login(data: UserLogin, db: Session = Depends(get_db)):
+def auth_login(data: UserLoginSchema, db: Session = Depends(get_db)):
 
     try:
-        if not (user_exists := db.query(User_db).filter(User_db.user_mail == data.email).first()):
+        if not (user_exists := db.query(UserModel).filter(UserModel.user_mail == data.email).first()):
             #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
             return {
                 "mensagem": "usuário não encontrado. Verifique seu e-mail"

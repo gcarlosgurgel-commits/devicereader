@@ -680,3 +680,14 @@
    "ErrorScopeName": "devices_generate",
    "ErrorLineNo": 42
 }
+04/07/2026 | 16:05:37: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) UNIQUE constraint failed: devices.machine_id"
+   ],
+   "LinePathError": "<frame at 0x000001F4208030F0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 49, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x000001F41B2000D0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 17>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 42
+}
