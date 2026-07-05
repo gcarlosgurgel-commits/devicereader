@@ -18,8 +18,8 @@ oauth_scheme = OAuth2PasswordBearer(tokenUrl="login")
 def devices_generate(data: DeviceGenerateSchema, db: Session = Depends(get_db), token: str = Depends(oauth_scheme)):
     try:
 
-        ##Verificar se usuario esta logfado
-        print("MEU TOKEN: ", token)
+        ##Verificar se usuario esta logado
+        #Como? O oauth faz isso automaticamente?
 
         ##Pegar id do usuario
         payload = jwt_handler.decode_token(token)
@@ -30,6 +30,7 @@ def devices_generate(data: DeviceGenerateSchema, db: Session = Depends(get_db), 
 
         #Criar instancia de device na tabela do db
         device_instance = DeviceModel(
+            alias= data.device_name,
             model= device_scanned["Model"], 
             name= device_scanned["Name"], 
             username = device_scanned["UserName"], 
@@ -49,4 +50,44 @@ def devices_generate(data: DeviceGenerateSchema, db: Session = Depends(get_db), 
         error.error_log_message(e)
         return {
             "Mensagem": "Erro ao gerar novo dispositivo "
+        }
+    
+
+@router.get("/list")
+def list_devices(db: Session = Depends(get_db),token: str = Depends(oauth_scheme)) -> dict:
+    try:
+        #pegar o payload do token
+        user_token = jwt_handler.decode_token(token)
+
+        #Verificar se token está valido
+        if token["mensagem"].lower() == "token invalido":
+            return {"Mensagem": "Token invalido"}
+
+        #Verificar se há dispositivos
+        query = db.query(DeviceModel).filter(DeviceModel.user_id == user_token["user_id"]).all() #query é um objeto lazy que so entrega conforme o solicitado.
+
+        #Caso nao haja dispositivo
+        if not query:
+            return {"Mensagem": "Não há dispositivos a serem listados,"}
+        
+
+        lista = []
+        for device in query:
+            lista.append(
+                {
+                    "Alias": device.alias,
+                    "Model": device.model,
+                    "PrimaryOwnerName": device.primaryOwnerName,
+                    "Name": device.name,
+                    "User_id": device.user_id,
+                    "UserName": device.username
+                }
+            )
+
+        return {"Mensagem": lista}
+    
+    except Exception as e:
+        error.error_log_message(e)
+        return {
+            "messagem": "Erro ao listar dispositivos do usuário"
         }

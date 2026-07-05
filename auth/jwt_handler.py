@@ -7,7 +7,7 @@ from error_treatment.error import error_log_message
 __all__ = ["create_token", "decode_token"]
 
 KEY = "CHAVESECRETA"
-ALG = "HS256"
+ALG = ["HS256"]
 
 
 def _base_create_token(KEY: str, alg: str, role: str, user_mail: str, user_id: int) -> dict:
@@ -35,17 +35,22 @@ def _base_create_token(KEY: str, alg: str, role: str, user_mail: str, user_id: i
         }
 
 
-def _base_decode_token(KEY: str, ALG: str, token: str) -> dict:
+def _base_decode_token(KEY: str, ALG: list, token: str) -> dict:
     """
     Decode and validate a token
     """
     try:
-        token = jwt.decode(token, key=KEY, algorithms= ALG)
-        return token
+        payload = jwt.decode(token, key=KEY, algorithms= ALG)
+        return payload
+    
+    except jwt.InvalidTokenError as e:
+        error_log_message(e)
+        return {"mensagem" : "token invalido"}
+    
     except Exception as e:
         error_log_message(e)
         return {
-            "Message": "Erro na decodificação do token"
+            "Mensagem": "Erro na decodificação do token"
         }
 
 create_token = partial(_base_create_token, KEY, ALG)

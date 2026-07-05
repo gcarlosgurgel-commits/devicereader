@@ -54,6 +54,7 @@ class DeviceModel(Base):
     """
     __tablename__ = "devices"
     
+    alias: Mapped[str] = mapped_column(String)
     model: Mapped[str] = mapped_column(String)
     name: Mapped[str] = mapped_column(String)
     username: Mapped[str] = mapped_column(String)
@@ -68,3 +69,6 @@ class DeviceModel(Base):
     )
     created_at: Mapped[DateTime] = mapped_column(DateTime, server_default=func.now())
     updated_at: Mapped[DateTime] = mapped_column(DateTime, server_default=func.now(), onupdate=func.now())
+
+    def __repr__(self):
+        return str(self.__dict__)

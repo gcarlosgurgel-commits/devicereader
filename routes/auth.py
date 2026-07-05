@@ -31,7 +31,8 @@ def auth_register(data: UserGenerateSchema, db: Session = Depends(get_db)):
         password_hash = security.password_hasher(data.password)
         )
 
-    if (existing_user := db.query(UserModel).filter(UserModel.user_mail == data.mail).first()):
+    #Checando se o usuario ja existe no banco de dados
+    if (existing_user := db.query(UserModel).filter(UserModel.user_mail == user.user_mail).first()):
         #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
         return{
             "MensagemErro": "Usuário(a) já regitadoA(a)"

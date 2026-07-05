@@ -691,3 +691,465 @@
    "ErrorScopeName": "devices_generate",
    "ErrorLineNo": 42
 }
+05/07/2026 | 03:26:52: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'dict' object has no attribute 'user_id'"
+   ],
+   "LinePathError": "<frame at 0x0000023F1888E890, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 74, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000023F184B6830, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 66
+}
+05/07/2026 | 03:35:36: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'Query' object has no attribute 'user_id'"
+   ],
+   "LinePathError": "<frame at 0x000001FDE3AA9640, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 75, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000001FDE2104250, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 67
+}
+05/07/2026 | 03:53:02: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) UNIQUE constraint failed: devices.machine_id"
+   ],
+   "LinePathError": "<frame at 0x0000015E5AABF810, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 49, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x0000015E57A11CD0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 17>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 42
+}
+05/07/2026 | 03:55:58: {
+   "TypeError": "IntegrityError",
+   "ArgumentsListErro": [
+      "(sqlite3.IntegrityError) UNIQUE constraint failed: devices.machine_id"
+   ],
+   "LinePathError": "<frame at 0x0000026606A1EE90, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 49, code devices_generate>",
+   "StartScopeError": "<code object devices_generate at 0x000002660396E4C0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 17>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "devices_generate",
+   "ErrorLineNo": 42
+}
+05/07/2026 | 04:01:10: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'id'"
+   ],
+   "LinePathError": "<frame at 0x0000017B85071690, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000017B83777650, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:01:10: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'id'"
+   ],
+   "LinePathError": "<frame at 0x0000017B850719C0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000017B83777650, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:02:35: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object is not subscriptable"
+   ],
+   "LinePathError": "<frame at 0x000001AA93DB1690, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000001AA9233AD20, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A171690, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A1719C0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A1718B0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A171F10, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A171F10, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A171BE0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A172130, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A172130, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A171F10, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A171F10, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A171F10, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:05:44: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'itens'"
+   ],
+   "LinePathError": "<frame at 0x000002189A171F10, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 79, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021898765A10, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 72
+}
+05/07/2026 | 04:19:39: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object has no attribute 'id'"
+   ],
+   "LinePathError": "<frame at 0x000002696AB8A340, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 73, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000026968F40CA0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 67
+}
+05/07/2026 | 04:20:28: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'list' object has no attribute '__dict__'"
+   ],
+   "LinePathError": "<frame at 0x000001D6A4B4A340, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 75, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000001D6A30E0BD0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 64
+}
+05/07/2026 | 04:21:09: {
+   "TypeError": "AttributeError",
+   "ArgumentsListErro": [
+      "'list' object has no attribute '__dict__'"
+   ],
+   "LinePathError": "<frame at 0x00000228A01FA340, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 68, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000002289AB6AD40, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 64
+}
+05/07/2026 | 04:23:43: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object is not subscriptable"
+   ],
+   "LinePathError": "<frame at 0x00000217125E1690, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 76, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000021710A3D770, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 70
+}
+05/07/2026 | 04:24:22: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'DeviceModel' object is not subscriptable"
+   ],
+   "LinePathError": "<frame at 0x000001EA03BE1690, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 76, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000001EA7F86E660, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 70
+}
+05/07/2026 | 04:25:21: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "cannot use 'list' as a set element (unhashable type: 'list')"
+   ],
+   "LinePathError": "<frame at 0x0000019A3DF91690, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 76, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x0000019A3C658960, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 67
+}
+05/07/2026 | 05:25:53: {
+   "TypeError": "ExpiredSignatureError",
+   "ArgumentsListErro": [
+      "Signature has expired"
+   ],
+   "LinePathError": "<frame at 0x000002406DF69140, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x000002406D933310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+05/07/2026 | 05:25:53: {
+   "TypeError": "KeyError",
+   "ArgumentsListErro": [
+      "user_id"   
+   ],
+   "LinePathError": "<frame at 0x000002406DF8AB90, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 85, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000002406C404750, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 62
+}
+05/07/2026 | 05:27:18: {
+   "TypeError": "ExpiredSignatureError",
+   "ArgumentsListErro": [
+      "Signature has expired"
+   ],
+   "LinePathError": "<frame at 0x00000245EB509140, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000245EAE93310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+05/07/2026 | 05:27:18: {
+   "TypeError": "KeyError",
+   "ArgumentsListErro": [
+      "user_id"
+   ],
+   "LinePathError": "<frame at 0x00000245EB509640, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 85, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x00000245E9B7E2D0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 62
+}
+05/07/2026 | 05:27:18: {
+   "TypeError": "ExpiredSignatureError",
+   "ArgumentsListErro": [
+      "Signature has expired"
+   ],
+   "LinePathError": "<frame at 0x00000245EB509640, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000245EAE93310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+05/07/2026 | 05:27:18: {
+   "TypeError": "KeyError",
+   "ArgumentsListErro": [
+      "user_id"
+   ],
+   "LinePathError": "<frame at 0x00000245EB509640, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 85, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x00000245E9B7E2D0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 62
+}
+05/07/2026 | 05:28:06: {
+   "TypeError": "ExpiredSignatureError",
+   "ArgumentsListErro": [
+      "Signature has expired"
+   ],
+   "LinePathError": "<frame at 0x00000124E41D9140, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000124E3B53310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+05/07/2026 | 05:28:06: {
+   "TypeError": "KeyError",
+   "ArgumentsListErro": [
+      "user_id"
+   ],
+   "LinePathError": "<frame at 0x00000124E41F6B90, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 84, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x00000124E285C730, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 62
+}
+05/07/2026 | 05:29:47: {
+   "TypeError": "ExpiredSignatureError",
+   "ArgumentsListErro": [
+      "Signature has expired"
+   ],
+   "LinePathError": "<frame at 0x00000134CE839140, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000134CE1D3310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+05/07/2026 | 05:29:47: {
+   "TypeError": "KeyError",
+   "ArgumentsListErro": [
+      "user_id"
+   ],
+   "LinePathError": "<frame at 0x00000134CE856CE0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 89, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x00000134CCFADF40, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 67
+}
+05/07/2026 | 05:29:47: {
+   "TypeError": "ExpiredSignatureError",
+   "ArgumentsListErro": [
+      "Signature has expired"
+   ],
+   "LinePathError": "<frame at 0x00000134CE839640, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000134CE1D3310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+05/07/2026 | 05:29:47: {
+   "TypeError": "KeyError",
+   "ArgumentsListErro": [
+      "user_id"
+   ],
+   "LinePathError": "<frame at 0x00000134CE7A3CA0, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 89, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x00000134CCFADF40, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 67
+}
+05/07/2026 | 05:30:07: {
+   "TypeError": "ExpiredSignatureError",
+   "ArgumentsListErro": [
+      "Signature has expired"
+   ],
+   "LinePathError": "<frame at 0x00000240EFFC9240, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\auth\\\\jwt_handler.py', line 46, code _base_decode_token>",
+   "StartScopeError": "<code object _base_decode_token at 0x00000240EF983310, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py\", line 38>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\auth\\jwt_handler.py",
+   "ErrorScopeName": "_base_decode_token",
+   "ErrorLineNo": 43
+}
+05/07/2026 | 05:30:07: {
+   "TypeError": "KeyError",
+   "ArgumentsListErro": [
+      "user_id"
+   ],
+   "LinePathError": "<frame at 0x00000240EFFEAB90, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 89, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x00000240ED4D1180, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 67
+}
+05/07/2026 | 05:49:50: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "__repr__ returned non-string (type dict)"
+   ],
+   "LinePathError": "<frame at 0x000001DD0A1C6F80, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 86, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000001DD0730B820, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 68
+}
+05/07/2026 | 05:50:09: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'dict' object is not callable"
+   ],
+   "LinePathError": "<frame at 0x0000023667516F80, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 86, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000002366456F1B0, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 68
+}
+05/07/2026 | 05:51:37: {
+   "TypeError": "TypeError",
+   "ArgumentsListErro": [
+      "'dict' object is not callable"
+   ],
+   "LinePathError": "<frame at 0x000001CCC1526F80, file 'C:\\\\Users\\\\georg\\\\OneDrive\\\\Documentos\\\\WInLinux\\\\automacoes\\\\routes\\\\devices.py', line 86, code list_devices>",
+   "StartScopeError": "<code object list_devices at 0x000001CCBE52DF40, file \"C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py\", line 55>",
+   "ErrorFileName": "C:\\Users\\georg\\OneDrive\\Documentos\\WInLinux\\automacoes\\routes\\devices.py",
+   "ErrorScopeName": "list_devices",
+   "ErrorLineNo": 68
+}
