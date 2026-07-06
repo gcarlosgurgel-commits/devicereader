@@ -1,7 +1,9 @@
 from pwdlib import PasswordHash
+from fastapi.security import OAuth2PasswordBearer
 from error_treatment.error import error_log_message
 
 
+#Passoword Hasher Handlers
 
 def password_hasher(password:str) -> str:
     """
@@ -27,4 +29,7 @@ def verify_password(password, hashed_password):
     except Exception as e:
         error_log_message(e)
         return {"[ERROR]": "Erro no hash do password."}
-    
+
+
+# oauth schema
+oauth_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")

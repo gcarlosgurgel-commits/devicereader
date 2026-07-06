@@ -9,26 +9,35 @@ from database.models import UserModel
 from schemas.schemas import UserGenerateSchema, UserLoginSchema
 
 from auth import jwt_handler
-from core import security
+from core.security import password_hasher, verify_password
 
 from error_treatment.error import error_log_message
 
-router = APIRouter(prefix="/auth", tags=["auth"])
 
-oauth2_scheme = OAuth2PasswordBearer(
-    tokenUrl="login"
-)
+
+router = APIRouter(prefix="/auth", tags=["auth"])
 
 
 @router.post("/register")
 def auth_register(data: UserGenerateSchema, db: Session = Depends(get_db)):  
+    """
+    Create a new User.
+    """
 
+    #Verificar se ha Data
+    if not data:
+        return {"Mensagem": "Dados para geração de registro incompletos."}
+    
+    #verificar se valor de db e truthy
+    if not db:
+        return {"Mensagem": "Fala na requisicao ao banco de dados"}
+    
     user = UserModel(
         first_name= data.first_name, 
         last_name= data.last_name, 
         user_age= data.age, 
         user_mail = data.mail,
-        password_hash = security.password_hasher(data.password)
+        password_hash = password_hasher(data.password)
         )
 
     #Checando se o usuario ja existe no banco de dados
@@ -43,12 +52,18 @@ def auth_register(data: UserGenerateSchema, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(user)
 
+    #Getting user_id to insert in token payload.
     existing_user = db.query(UserModel).filter(UserModel.user_mail == data.mail).first()
+
+    #Generate token
+    if not existing_user.id:
+        return {"Mensagem": "Não foi localizado ID do usuário em banco de dados para geração do token"}
+    
     token = jwt_handler.create_token("user", data.mail, existing_user.id) 
 
     return{
         "Mensagem":"Usuário registado com sucesso.",
-        "Nome": f"{user.first_name.capitalize()} {user.last_name.capitalize()}",
+        "Nome": f"{user.get_fullName()}",
         "Age": user.user_age,
         "E-mail": user.user_mail,
         "token": {
@@ -61,20 +76,36 @@ def auth_register(data: UserGenerateSchema, db: Session = Depends(get_db)):
 def auth_login(data: UserLoginSchema, db: Session = Depends(get_db)):
 
     try:
+
+        #Verificar se ha Data
+        if not data:
+            return {"Mensagem": "Dados para geração de registro incompletos."}
+        
+        #verificar se valor de db e truthy
+        if not db:
+            return {"Mensagem": "Fala na requisicao ao banco de dados"}
+
+        #Verificando se o usuario ja existe em banco de dados
         if not (user_exists := db.query(UserModel).filter(UserModel.user_mail == data.email).first()):
             #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
             return {
                 "mensagem": "usuário não encontrado. Verifique seu e-mail"
             }
         
-        if not security.verify_password(data.password, user_exists.password_hash):
+        #Verificando se password esta correto
+        if not verify_password(data.password, user_exists.password_hash):
             #####CHECAR USER  E SENHA SERÁ REPETITIVO , MAKE IT DRY####
             return{
                 "mensagem": "Login inválido"
             }
         
-        #Cria o otken do usuário
+        #Cria o token do usuário
         token = jwt_handler.create_token("user", data.email, user_exists.id)
+
+        #Verifica se token foi criado com sucesso
+        if not "token" in token.keys():
+            return {"Mensagem": "Não foi possivel gerar o token de acesso para o usuário."}
+        
         
         return{
             "mensagem": "bem vindo usuario",

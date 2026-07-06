@@ -41,16 +41,21 @@ class UserModel(Base):
         "DeviceModel", 
         back_populates="user"
         )
+    
+    def get_fullName(self):
+        return f"{self.first_name.capitalize()} {self.last_name.capitalize()}"
 
 
 class DeviceModel(Base):
     """
     -> PARAMETERS <-
+    alias,
     model,
     name,
     username,
     primaryOwnerName,
     machine_id,
+    user_id
     """
     __tablename__ = "devices"
     

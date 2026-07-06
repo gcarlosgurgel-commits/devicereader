@@ -1,5 +1,4 @@
 from fastapi import APIRouter, Depends
-from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 
 from schemas.schemas import DeviceGenerateSchema
@@ -8,21 +7,53 @@ from database.models import DeviceModel
 from hardware.device import Device
 
 from auth import jwt_handler
+from core.security import oauth_scheme
 
 from error_treatment import error
 
 router= APIRouter(prefix="/devices", tags=["devices"])
-oauth_scheme = OAuth2PasswordBearer(tokenUrl="login")
+
+def get_current_user(token: str = Depends(oauth_scheme)):
+
+    #pegar o payload do token
+    payload = jwt_handler.decode_token(token)
+
+    #Verificar se token está valido
+    if not "role" in payload.keys():
+        return None
+    
+    return payload
+    
 
 @router.post("/generate")
-def devices_generate(data: DeviceGenerateSchema, db: Session = Depends(get_db), token: str = Depends(oauth_scheme)):
+def devices_generate(data: DeviceGenerateSchema, db: Session = Depends(get_db), token: any = Depends(oauth_scheme)) -> dict:
     try:
 
-        ##Verificar se usuario esta logado
-        #Como? O oauth faz isso automaticamente?
+        #Ferificar se há Data
+        if not data:
+            return {"Mensagem": "Não foram enviados os dados solicitados para registo do dispositivo."}
+        
+        #Verifica se já ha dispositivo com o mesmo nome
+        device_name = data.device_name
+        if (device_exists := db.query(DeviceModel).filter(DeviceModel.alias == device_name).first()):
+            return {"Mensagem": "Já existe um dispositivo com o mesmo nome. Escolha outro nome para seu novo dispositivo."}
 
-        ##Pegar id do usuario
+        #Verificar se ha token
+        if not token:
+            return {"Mensagem": "Não há token de acesso válido."}
+
+        #Pegar informacoes do usuario a partir do token recebido
         payload = jwt_handler.decode_token(token)
+
+        #Verifica se foi retornado dados truthy no payload
+        if not payload:
+            return {"Mensagem": "Falha no processamento dos dados de acesso [Token]."}
+
+        #Verificar se token do usuario esta válido verificando a presença de claims geralmente presentes no payload
+        if not "role" in payload.keys():
+            return {
+                "Mensagem": "Token invalido. Usuário deslogado"
+            }
 
         #Escanear dispositivo
         device = Device()
@@ -44,8 +75,10 @@ def devices_generate(data: DeviceGenerateSchema, db: Session = Depends(get_db), 
         db.refresh(device_instance)
 
         return {
-            "message": device_instance
+            "messagem": "Dispositivo escaneado com sucesso",
+            "Disposito": device_instance
         }
+    
     except Exception as e:
         error.error_log_message(e)
         return {
@@ -54,24 +87,18 @@ def devices_generate(data: DeviceGenerateSchema, db: Session = Depends(get_db), 
     
 
 @router.get("/list")
-def list_devices(db: Session = Depends(get_db),token: str = Depends(oauth_scheme)) -> dict:
+def list_devices(db: Session = Depends(get_db),payload: any = Depends(get_current_user)) -> dict:
     try:
-        #pegar o payload do token
-        user_token = jwt_handler.decode_token(token)
-
-        #Verificar se token está valido
-        if token["mensagem"].lower() == "token invalido":
-            return {"Mensagem": "Token invalido"}
+        if not payload:
+            return {"Messagem": "Acesso não validado"}
 
         #Verificar se há dispositivos
-        query = db.query(DeviceModel).filter(DeviceModel.user_id == user_token["user_id"]).all() #query é um objeto lazy que so entrega conforme o solicitado.
-
+        query = db.query(DeviceModel).filter(DeviceModel.user_id == payload["user_id"]).all()
         #Caso nao haja dispositivo
         if not query:
             return {"Mensagem": "Não há dispositivos a serem listados,"}
-        
 
-        lista = []
+        lista = []  
         for device in query:
             lista.append(
                 {
@@ -80,7 +107,7 @@ def list_devices(db: Session = Depends(get_db),token: str = Depends(oauth_scheme
                     "PrimaryOwnerName": device.primaryOwnerName,
                     "Name": device.name,
                     "User_id": device.user_id,
-                    "UserName": device.username
+                    "UserName": device.username,
                 }
             )
 
@@ -91,3 +118,4 @@ def list_devices(db: Session = Depends(get_db),token: str = Depends(oauth_scheme
         return {
             "messagem": "Erro ao listar dispositivos do usuário"
         }
+    

@@ -7,14 +7,19 @@ from error_treatment.error import error_log_message
 __all__ = ["create_token", "decode_token"]
 
 KEY = "CHAVESECRETA"
-ALG = ["HS256"]
+ALG = "HS256"
 
 
-def _base_create_token(KEY: str, alg: str, role: str, user_mail: str, user_id: int) -> dict:
+def _base_create_token(KEY: str, alg: str, role: str = None, user_mail: str = None, user_id: int = None) -> dict:
     """
     Create a new token
     """
     try:
+
+
+        if not role or not user_mail or not user_id:
+            return {"Mensagem": "Dados para geração de token incompletos."}
+        
         pay ={
         "role": role,
         "user_mail": user_mail,
@@ -35,12 +40,20 @@ def _base_create_token(KEY: str, alg: str, role: str, user_mail: str, user_id: i
         }
 
 
-def _base_decode_token(KEY: str, ALG: list, token: str) -> dict:
+def _base_decode_token(KEY: str, ALG: list, token: str = None) -> dict:
     """
     Decode and validate a token
     """
     try:
+
+        if not token:
+            return {"Mensagem": "Dados para decodificação do token incompletos"}
+        
         payload = jwt.decode(token, key=KEY, algorithms= ALG)
+
+        if not "role" in payload:
+            return { "Mensagem": "fala na decodificação do payload."}
+
         return payload
     
     except jwt.InvalidTokenError as e:
